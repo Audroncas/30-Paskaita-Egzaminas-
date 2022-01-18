@@ -21,8 +21,12 @@ const users = [
 ];
 
 function getUserAverageAge(arr){
-  const sum = arr.reduce((total, user) => total + user.age, 0);
-  return Math.round(sum/arr.length);
+  if (arr.length > 0) {
+      const sum = arr.reduce((total, user) => total + user.age, 0);
+      return Math.round(sum/arr.length);
+  } else {
+      return 0;
+  }
 }
 
 function getUsersNames(arr){

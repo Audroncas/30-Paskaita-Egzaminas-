@@ -14,3 +14,8 @@ function Calculator(num1, num2) {
     this.multiplication = () => {return this.num1 * this.num2}
     this.division = () => {return this.num1 / this.num2}
 }
+
+const calc = new Calculator(2,3);
+console.log(calc.sum())
+console.log(calc.multiplication())
+console.log(calc.division())

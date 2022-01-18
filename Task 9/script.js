@@ -21,3 +21,6 @@ class Movie {
         }
     };
 }
+
+const movie = new Movie("The Matrix", "Lana Wachowski and Lilly Wachowski", 63000000);
+console.log(movie.wasExpensive())
